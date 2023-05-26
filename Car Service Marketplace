@@ -1,1 +1,19 @@
+CREATE TABLE Marktplace (id INTEGER PRIMARY KEY, name TEXT, qty INTEGER, department TEXT, price INTEGER);
+INSERT INTO Marktplace VALUES (1, "Timing Belt", 313, 'Engine',100.00);
+INSERT INTO Marktplace VALUES (2, "Spark Plugs", 459, 'Engine',6.00);
+INSERT INTO Marktplace VALUES (3, "Radiator Hoses", 303, 'Engine',16.00);
+INSERT INTO Marktplace VALUES (4, "Break Pads", 712, 'Brake System',43.00);
+INSERT INTO Marktplace VALUES (5, "Rotors", 280, 'Brake System',28.00);
+INSERT INTO Marktplace VALUES (6, "Wheel Bearings", 468, 'Brake System',280.00);
+INSERT INTO Marktplace VALUES (7, "Coilovers", 840, 'Suspension',150.00);
+INSERT INTO Marktplace VALUES (8, "Lower Contol Arm", 642, 'Suspension',90.00);
+INSERT INTO Marktplace VALUES (9, "Upper Contol Arm", 642, 'Suspension',60.00);
+INSERT INTO Marktplace VALUES (10, "Headers", 416, 'Engine',315.00);
+INSERT INTO Marktplace VALUES (11, "Radiators", 850, 'Engine',500.00);
+INSERT INTO Marktplace VALUES (12, "Thermostats", 271, 'Engine',45.00);
+INSERT INTO Marktplace VALUES (13, "Head Gaskets", 107, 'Engine',210.00);
+INSERT INTO Marktplace VALUES (14, "Coilovers", 642, 'Engine',470.00);
+INSERT INTO Marktplace VALUES (15, "Starters", 701, 'Engine',360.00);
+SELECT id, name, price as price_rounded, department, qty FROM Marktplace 
+ORDER BY price ASC;
 
