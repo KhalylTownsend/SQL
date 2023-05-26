@@ -14,6 +14,7 @@ INSERT INTO Marktplace VALUES (12, "Thermostats", 271, 'Engine',45.00);
 INSERT INTO Marktplace VALUES (13, "Head Gaskets", 107, 'Engine',210.00);
 INSERT INTO Marktplace VALUES (14, "Coilovers", 642, 'Engine',470.00);
 INSERT INTO Marktplace VALUES (15, "Starters", 701, 'Engine',360.00);
-SELECT id, name, price as price_rounded, department, qty FROM Marktplace 
+SELECT ID, Name, Price as Price_Rounded, Department, QTY 
+FROM Marktplace 
 ORDER BY price ASC;
 
