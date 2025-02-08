@@ -1,0 +1,25 @@
+-- Prompt: Write a SQL query that orders the items by price.
+SELECT item_name, price
+FROM superstore
+ORDER BY price
+LIMIT 10;
+
+-- Prompt: Write your own SQL query that will show a statistic about the item prices, like a sum, average, minimum, maximum, or count.
+SELECT item_id, item_name, category, MIN(price), average_rating
+FROM superstore
+WHERE average_rating > 4.4
+Group BY category
+ORDER BY average_rating DESC;
+
+--Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies".
+SELECT item_id, item_name,  price, category, average_rating
+FROM superstore
+WHERE category = "Kitchen Supplies"
+LIMIT 7;
+
+-- How Many itmes in each category have a price over $20?
+SELECT Category, Count(item_name)AS "Items"
+FROM superstore
+Where price > 75
+GROUP BY category
+ORDER BY price asc;
